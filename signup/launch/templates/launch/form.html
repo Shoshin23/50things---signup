@@ -1,0 +1,21 @@
+{% extends "launch/base.html" %}
+{% block content %}
+
+<div class="container">
+   <div class="row">
+     <div class="span12 subscribe">
+           <p><b>Signup now! We promise to send you one mail and one mail only - telling you when we're going to launch.</b><p>
+<form action="." method="post" accept-charset="utf-8">
+{% csrf_token %}
+<div class = "form-input">
+{{ form.email }}
+<br> </br>
+{{ form.city }}
+</div>
+<button>Sign Up!</button>
+</form>
+</div>
+</div>
+</div>
+
+{% endblock %}
